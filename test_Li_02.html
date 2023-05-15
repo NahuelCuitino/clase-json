@@ -1,0 +1,124 @@
+<html>
+
+<head>
+  <style>
+    td {
+      width: 50%;
+      border: 1px solid #eee;
+      font-size: 15px;
+      margin: 0;
+      padding: 12px;
+      font-family: arial, sans-serif;
+
+    }
+    td:last-child {
+      text-align: right;
+
+    }
+
+    table{
+      border-collapse: collapse;
+      border-spacing: 0;
+      max-width: 450px;
+      width: 100%;
+    }
+    .salaLocation{
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+    }
+
+    .clase{
+      width: 50%;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <div id="location" class="salaLocation">
+   
+    </div>
+  </div>
+    <!-- <script src="data.js"></script> -->
+    <script>
+        let movies = [
+          {
+          "id": 0,
+          "title": "sala Uno",
+          "type" : [
+              {
+                "general" : "Entrada <b>General</b>",
+                "online" : "Online",
+                "ninos" : "Niños",
+                "promo" : "Promocion",              
+              }
+            ]
+          },{
+          "id": 1,
+          "title": "sala Uno",
+          "type" : [
+            {
+              "general" : "General",
+              "online" : "Online",
+              "ninos" : "Niños",
+              "promo" : "Promocion",              
+            }
+            ]
+          },{
+          "id": 2,
+          "title": "sala Uno",
+          "type" : [
+            {
+              "general" : "General",
+              "online" : "Online",
+              "ninos" : "Niños",
+              "promo" : "Promocion",              
+            }
+            ]
+          },{
+          "id": 2,
+          "title": "sala Uno",
+          "type" : [
+            {
+              "general" : "General",
+              "online" : "Online",
+              "ninos" : "Niños",
+              "promo" : "Promocion",              
+            }
+            ]
+          }
+      ];
+
+
+        var globalCounter = 0;
+        var tbody = document.getElementById('location');
+        for (var i = 0; i < Object.keys(movies).length; i++) {
+          var tr = "<div class='clase'>";
+          if (movies[i].id.toString().substring(movies[i].title.toString().length))
+          movies[i].value += "0";        
+          
+          var tipos = movies[i].type;
+          
+          for (var j = 0; j < tipos.length; j++ ){
+            console.log(tipos[j].general + tipos[j].online + tipos[j].ninos + tipos[j].promo)
+            var ul = "<ul class='clase'>";
+            ul += "<li>" + tipos[j].general + "</li>" + "<li>" + tipos[j].online + "</li>" + "<li>" + tipos[j].ninos + "</li>" + "<li>" + tipos[j].promo + "</li></ul>";       
+          }
+
+          tr += "<h3>" + movies[i].title.toString() + "</h3>" + ul;
+          tbody.innerHTML += tr;
+
+
+        }
+    </script>
+</body>
+</html>

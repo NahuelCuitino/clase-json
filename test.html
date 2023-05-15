@@ -1,0 +1,90 @@
+<html>
+
+<head>
+  <style>
+    td {
+  width: 50%;
+  border: 1px solid #eee;
+  font-size: 15px;
+  margin: 0;
+  padding: 12px;
+  font-family: arial, sans-serif;
+
+}
+td:last-child {
+  text-align: right;
+  
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 450px;
+  width: 100%;
+}
+  </style>
+
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <td>
+          Id
+        </td>
+        <td>
+          Titulo
+        </td>
+        <td>
+          Sala
+        </td>
+        <td>
+          horario
+        </td>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+    <!-- <script src="data.js"></script> -->
+    <script>
+        let movies = [
+          {
+          "id": 0,
+          "sala": "5",
+          "title": "Titulo 1",
+          "hora": "15hs"
+          },{
+          "id": 1,
+          "sala": "5",
+          "title": "Titulo 2",
+          "hora": "15hs"
+          },{
+          "id": 2,
+          "sala": "5",
+          "title": "Titulo 3",
+          "hora": "15hs"
+          },{
+          "id": 3,
+          "sala": "5",
+          "title": "Titulo 4",
+          "hora": "15hs"
+          }
+      ];
+
+
+        var globalCounter = 0;
+        var tbody = document.getElementById('tbody');
+        for (var i = 0; i < Object.keys(movies).length; i++) {
+            console.log(movies)
+
+          var tr = "<tr>";
+          if (movies[i].id.toString().substring(movies[i].sala.toString().indexOf('.'), movies[i].title.toString().length, movies[i].hora.toString().length) < 2)
+          movies[i].value += "0";
+
+          tr += "<td>" + movies[i].id + "</td>" + "<td>" + movies[i].title.toString()  + "</td>" + "<td>" + movies[i].sala.toString()  + "</td>" + "<td>" +  movies[i].hora.toString() + "</td></tr>";
+          tbody.innerHTML += tr;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <style>
+    td {
+      width: 50%;
+      border: 1px solid #eee;
+      font-size: 15px;
+      margin: 0;
+      padding: 12px;
+      font-family: arial, sans-serif;
+
+    }
+    td:last-child {
+      text-align: right;
+
+    }
+
+    table{
+      border-collapse: collapse;
+      border-spacing: 0;
+      max-width: 450px;
+      width: 100%;
+    }
+    .sectionCont{
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #ccc;
+
+    }
+    .salaLocation{
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+    }
+
+    .clase{
+      width: 50%;
+      border: 1px solid #333;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <div class="sectionCont">
+      <h2>Location</h2>
+      <div id="location" class="salaLocation">
+    
+      </div>
+   </div>
+    <div class="sectionCont">
+      <h2>Belgrano</h2>
+      <div id="belgrano" class="salaLocation">
+
+      </div>
+    </div>
+    <div class="sectionCont">
+      <h2>Haedo</h2>
+      <div id="haedo" class="salaLocation">
+
+      </div>
+    </div>
+  </div>
+    <script src="data.js"></script> 
+    <script>
+        
+
+        ///var globalCounter = 0;
+        var ListA = document.getElementById('location');
+        var ListB = document.getElementById('belgrano');
+        var ListC = document.getElementById('haedo');
+
+        function myFunction(objeto) {
+
+        for (var i = 0; i < Object.keys(objeto).length; i++) {
+          var tr = "<div class='clase'>";
+
+          var tipos = objeto[i].type;
+          
+          for (var j = 0; j < tipos.length; j++ ){
+            //console.log(tipos[j].general + tipos[j].online + tipos[j].ninos + tipos[j].promo)
+            var ul = "<ul>";
+            ul += "<li>" + tipos[j].general + "</li>" + "<li>" + tipos[j].online + "</li>" + "<li>" + tipos[j].ninos + "</li>" + "<li>" + tipos[j].promo + "</li></ul></div>";       
+          }
+
+          var test = tr + "<h3>" + objeto[i].title + "</h3>" + ul;
+        }
+        console.log(test)
+              return test;
+      }
+      ListA.innerHTML = myFunction(movies);
+      ListB.innerHTML = myFunction(belgrano);
+      ListC.innerHTML = myFunction(haedo);
+    </script>
+</body>
+</html>

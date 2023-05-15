@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+ <link rel="stylesheet" href="css/style.css">
+ <style>
+  .prices-hero{
+    max-width: 910px;
+    width: 100%;
+    margin-bottom: 32px
+  }
+
+
+ </style>
+</head>
+
+<body>
+
+  <div class="container">
+      <div class="row prices-hero">
+      
+      <picture>
+        <source 
+          media="(min-width: 769px)"
+          srcset="hero_prices.png" class="image-prices">
+        <source 
+          media="(max-width: 768px)"
+          srcset="hero_prices_mobile.png" class="image-prices">
+        <img 
+          src="hero_prices_mobile.png" 
+          alt="a cute kitten" class="image-prices">
+      </picture>
+
+
+      </div>
+ <!-- CONTENT Precios -->
+ <div class="container cont-test">
+  <div class="row prices-hero">
+  <picture>
+    <source 
+    media="(min-width: 769px)"
+    srcset="<?php echo Yii::app()->theme->baseUrl; ?>/images/hero_prices.jpg" class="image-prices">
+    <source 
+    media="(max-width: 768px)"
+    srcset="<?php echo Yii::app()->theme->baseUrl; ?>/images/hero_prices_mobile.jpg" class="image-prices">
+    <img 
+    src="<?php echo Yii::app()->theme->baseUrl; ?>/images/hero_prices_mobile.jpg" 
+    alt="" class="image-prices">
+  </picture>
+  </div>
+</div>
+<!--Tests Json -->
+
+<!-- -->    
+<div class="row">
+  <div class="col-xs-12">
+    <!--Belgrano -->
+    <div class="section-prices">
+      <div class="title-toggle">
+        <a role="button" data-toggle="collapse" href="#AccordionBelgrano" aria-expanded="false" aria-controls="collapseExample">  
+          <h2 class="section-prices__title">Showcase <b>Belgrano</b></h2>
+        </a>
+        <a role="button" data-toggle="collapse" href="#AccordionBelgrano" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+          <span class="prices-caret"></span>
+        </a>
+      </div>
+      <div id="AccordionBelgrano" class="collapse">
+        <div id="belgrano" class="section-prices__sala-location">
+          <!-- <script>
+            locacion[belgrano]
+          </script> -->
+        </div>
+      </div>
+    </div>
+    <!-- -->
+
+    <!--Norcenter -->
+    <div class="section-prices">
+      <div class="title-toggle">
+        <a role="button" data-toggle="collapse" href="#AccordionNorcenter" aria-expanded="false" aria-controls="collapseExample">  
+          <h2 class="section-prices__title">Showcase <b>Norcenter</b></h2>
+        </a>
+        <a role="button" data-toggle="collapse" href="#AccordionNorcenter" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+          <span class="prices-caret"></span>
+        </a>
+      </div>
+      <div id="AccordionNorcenter" class="collapse">
+        <div id="norcenter" class="section-prices__sala-location"></div>
+      </div>
+    </div>
+    <!-- -->
+
+    <!-- Haedo-->
+    <div class="section-prices">
+      <div class="title-toggle">
+        <a role="button" data-toggle="collapse" href="#AccordionHaedo" aria-expanded="false" aria-controls="collapseExample">
+          <h2 class="section-prices__title">Showcase <b>Haedo</b></h2>
+        </a>
+        <a role="button" data-toggle="collapse" href="#AccordionHaedo" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+          <span class="prices-caret"></span>
+        </a>
+      </div>
+      <div class="collapse" id="AccordionHaedo">
+        <div id="haedo" class="section-prices__sala-location collapse">
+        </div>
+      </div>
+    </div>
+    <!-- -->
+
+    <!-- Haedo-->
+    <div class="section-prices">
+      <div class="title-toggle">
+        <a role="button" data-toggle="collapse" href="#AccordionQuilmes" aria-expanded="false" aria-controls="collapseExample">
+          <h2 class="section-prices__title">Showcase <b>Quilmes</b></h2>
+        </a>
+        <a role="button" data-toggle="collapse" href="#AccordionQuilmes" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+          <span class="prices-caret"></span>
+        </a>
+      </div>
+      <div class="collapse" id="AccordionQuilmes">
+        <div id="quilmes" class="section-prices__sala-location collapse">
+        </div>
+      </div>
+    </div>
+    <!-- -->
+
+    <!--Cordoba -->
+    <div class="section-prices">
+      <div class="title-toggle">
+        <a role="button" data-toggle="collapse" href="#AccordionCordoba" aria-expanded="false" aria-controls="collapseExample">
+          <h2 class="section-prices__title">Showcase  <b>Córdoba</b></h2>
+        </a>
+        <a role="button" data-toggle="collapse" href="#AccordionCordoba" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+          <span class="prices-caret"></span>
+        </a>
+      </div>
+      <div id="AccordionCordoba" class="collapse">
+        <div id="cordoba" class="section-prices__sala-location">    
+        </div>
+      </div>
+    </div>
+    <!-- -->
+
+    <!--Allende -->
+    <div class="section-prices">
+      <div class="title-toggle">
+        <a role="button" data-toggle="collapse" href="#AccordionRosario" aria-expanded="false" aria-controls="collapseExample">
+          <h2 class="section-prices__title">Showcase  <b>Allende</b></h2>
+        </a>
+        <a role="button" data-toggle="collapse" href="#AccordionAllende" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+          <span class="prices-caret"></span>
+        </a>
+      </div>
+      <div id="AccordionAllende" class="collapse">
+        <div id="allende" class="section-prices__sala-location">    
+        </div>
+      </div>
+    </div>
+    <!-- -->
+
+    <!--Allende -->
+    <div class="section-prices">
+      <div class="title-toggle">
+        <a role="button" data-toggle="collapse" href="#AccordionRosario" aria-expanded="false" aria-controls="collapseExample">
+          <h2 class="section-prices__title">Showcase  <b>Rosario</b></h2>
+        </a>
+        <a role="button" data-toggle="collapse" href="#AccordionRosario" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+          <span class="prices-caret"></span>
+        </a>
+      </div>
+      <div id="AccordionRosario" class="collapse">
+        <div id="rosario" class="section-prices__sala-location">    
+        </div>
+      </div>
+    </div>
+    <!-- -->
+
+    <!--Imax -->
+    <div class="section-prices">
+      <div class="title-toggle">
+        <a role="button" data-toggle="collapse" href="#AccordionImax" aria-expanded="false" aria-controls="collapseExample">
+          <h2 class="section-prices__title">Showcase <b>Imax</b></h2>
+        </a>
+        <a role="button" data-toggle="collapse" href="#AccordionImax" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+          <span class="prices-caret"></span>
+        </a>
+      </div>
+      <div class="collapse" id="AccordionImax">
+        <div id="imax-salas" class="section-prices__sala-location collapse">
+        </div>
+      </div>
+    </div>
+    <!-- -->
+
+
+  </div>
+</div> 
+<!-- -->
+<!-- /CONTENT Precios -->
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <!-- <script src="data.json"></script>  -->
+    <script>
+     // const MyData = './data.json';
+      const MyData = 'https://api.jsonbin.io/v3/qs/6462361f9d312622a35ebaf4';
+     async function ReadData() {
+        const response = await fetch(MyData);
+        const JsData =  await response.json();
+        console.log("xxx " + MyData);
+      }
+      ReadData();
+     
+  </script>
+</body>
+</html>

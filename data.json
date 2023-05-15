@@ -1,0 +1,107 @@
+[
+  {
+    "test": "test",
+    "belgrano": [
+      {
+        "id": 0,
+        "title": "Salas 2d",
+        "type": [
+          {
+            "general": "$1700",
+            "online": "$1275",
+            "ninos": "$1100",
+            "promo": "$1100"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Salas 2d Superseat",
+        "type": [
+          {
+            "general": "$1950",
+            "online": "$1462,50",
+            "ninos": "$1250",
+            "promo": "$1250"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Salas 3d",
+        "type": [
+          {
+            "general": "$2000",
+            "online": "$1500",
+            "ninos": "$1300",
+            "promo": "$1300"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Salas 3d Superseat",
+        "type": [
+          {
+            "general": "$2250",
+            "online": "$1687,50",
+            "ninos": "$1400",
+            "promo": "$1400"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "norcenter": [
+      {
+        "id": 0,
+        "title": "Salas 2d",
+        "type": [
+          {
+            "general": "$1700d",
+            "online": "$1275d",
+            "ninos": "$1100d",
+            "promo": "$1100d"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Salas 2d Superseat",
+        "type": [
+          {
+            "general": "$1950d",
+            "online": "$1462,50d",
+            "ninos": "$1250d",
+            "promo": "$1250d"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Salas 3d",
+        "type": [
+          {
+            "general": "$2000d",
+            "online": "$1500d",
+            "ninos": "$1300d",
+            "promo": "$1300d"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Salas 3d Superseat",
+        "type": [
+          {
+            "general": "$2250d",
+            "online": "$1687,50d",
+            "ninos": "$1400d",
+            "promo": "$1400d"
+          }
+        ]
+      }
+    ]
+  }
+]

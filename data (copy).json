@@ -1,0 +1,23 @@
+const movies = [
+  {
+    "id": 0,
+    "sala": "5",
+    "title": "Hello World",
+    "hora": "15hs"
+    },{
+    "id": 1,
+    "sala": "5",
+    "title": "Hello World",
+    "hora": "15hs"
+    },{
+    "id": 2,
+    "sala": "5",
+    "title": "Hello World",
+    "hora": "15hs"
+    },{
+    "id": 3,
+    "sala": "5",
+    "title": "Hello World",
+    "hora": "15hs"
+    }  
+];
