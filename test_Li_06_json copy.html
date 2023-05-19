@@ -214,50 +214,47 @@
 
     <!-- <script src="data.json"></script>  -->
     <script>
-      const MyData = './data_2.json';
+      const MyData = './data.json';
       //const MyData = 'https://nahuelcuitino.github.io/clase-json/data.json';
 
-     /* var SalaBelgrano = document.getElementById('belgrano');
+      var SalaBelgrano = document.getElementById('belgrano');
       var SalaNorcenter = document.getElementById('norcenter');
       var SalaHaedo = document.getElementById('haedo');
       var SalaQuilmes = document.getElementById('quilmes');
       var SalaCordoba = document.getElementById('cordoba');
       var SalaAllende = document.getElementById('allende');
       var SalaRosario = document.getElementById('rosario');
-      var SalaImax = document.getElementById('imax-salas');*/
+      var SalaImax = document.getElementById('imax-salas');
 
-     async function ReadData(value) {
-        
+     async function ReadData() {
         const response = await fetch(MyData);
         const JsData =  await response.json();
         //console.log("xxx " + JsData[0].locacion[0].type[0].general + " " + JsData[0].locacion[0].title + "--" + JsData[0].cine);
         
-        for(i in JsData){
+        for(i in JsData){          
           var obj = JsData[i];
           
-          const location= obj.belgrano[0];
-
-          if (value == 'belgrano'){
-            location= obj.belgrano[0]; 
-          }else if(value == 'belgrano')
-          {
-            location= obj.norcenter[0];
+          if ('belgrano' == obj){
+            console.log("xxx" + obj)
           }
+          const section =  JsData[i].locacion;
+            
+            for(j in section){      
+             
+              if(JsData[i].cine = "Belgrano"){
+                for(h in JsData[i].locacion[j].type){
+                  
+                  const route = JsData[i].locacion[j].type[h];
+                  
+                  console.log("xx: " + JsData[i].cine + " " + JsData[i].locacion[j].title + " " + route.general + " " + route.online + " " + route.ninos + " " + route.promo);
 
-
-           
-
-          console.log(":::" + location );
-                    
-          
-          console.log("xxx" + location.type[0].general);
-         
-
+                }
+              }
+              
+            }
         }
       }
-
-     // var pepe = jsonObject["belgrano"]
-      ReadData('belgrano');
+      ReadData();
      
   </script>
 </body>

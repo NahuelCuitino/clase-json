@@ -1,7 +1,6 @@
 [
   {
-    "cine": "Belgrano",
-    "locacion": [
+    "belgrano": [
       {
         "id": 0,
         "title": "Salas 2d",
@@ -53,8 +52,7 @@
     ]
   },
   { 
-    "cine": "Norcenter",
-    "locacion": [
+    "norcenter": [
       {
         "id": 0,
         "title": "Salas 2d",
