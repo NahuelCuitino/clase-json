@@ -23,10 +23,14 @@ table{
   width: 100%;
 }
   </style>
-
+  <link href="/themes/default/css/bootstrap.min.css" rel="stylesheet"></link>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://showcase-st.insite-la.com/themes/default/js/bootstrap.min.js"></script>
+   <link href="https://showcase-st.insite-la.com/themes/default/css/styles.min.css" rel="stylesheet" />
+   <script src="https://showcase-st.insite-la.com/themes/default/js/main-scripts.js"></script>
 </head>
 
-<body>
+<body style="background-color: #4011a7 !important;" onLoad="$('#newModal').modal('show');">
   <table>
     <thead>
       <tr>
@@ -46,6 +50,42 @@ table{
     </thead>
     <tbody id="tbody"></tbody>
   </table>
+
+  <div class="modal fade" id="newModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="padding: 0px; max-width: 600px; width: 100%">
+      <div class="modal-content" style="background: #204891;">
+        <div class="modal-body" style="padding: 0px; text-align: center;">
+          <div class="container">
+            <div class="row">
+              <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: right; padding: 10px; background: #000;">
+                <button type="button" class="btn btn-secondary btn-ios" data-dismiss="modal" style="background: none;color: #fff;border:none;width: 20px;text-align: center;padding: 4px;border: 1px solid #fff;border-radius: 50%;height: 20px;line-height: 0.9;font-size: 13px;vertical-align: middle;">X</button>
+              </div> -->
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <img src="https://showcase-st.insite-la.com/themes/default/images/new_taylor.jpg" style="max-width: 300px; width: 100%;" alt="Taylor Swift" class="hoverZoomLink">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 60px 20px;">
+  
+                <h4 style="letter-spacing: 1px; color: #ffffff; margin: 0 0 20px; font-size: 24px;">
+                  <b style="text-transform: uppercase;">NUEVAS FUNCIONES</b>
+                </h4>
+  
+                <p style="letter-spacing: 1px; color: #ffffff; margin: 0 0 10px; font-size: 16px; text-align: center;">
+                  COMPRÁ YA TU ENTRADA
+                </p>
+
+                <div style="display: flex; flex-direction: row; align-items: center; justify-content:space-between;">
+                  <a href="https://entradas.todoshowcase.com/showcase/sinopsis?filmid=2562" target="_blank" class="btn  btn-secondary btn-ios" style="background: #4c68a7;color: #fff;border:none;width: 45%;margin: 0 4px;">Comprar acá</a>
+                  <button type="button" class="btn btn-secondary btn-ios" data-dismiss="modal" style="background: #4c68a7;color: #fff; border:none;width: 45%;margin: 0 4px;">Cerrar</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- <script src="data.js"></script> -->
     <script>
         let movies = [

@@ -153,7 +153,7 @@
     <!--Allende -->
     <div class="section-prices">
       <div class="title-toggle">
-        <a role="button" data-toggle="collapse" href="#AccordionRosario" aria-expanded="false" aria-controls="collapseExample">
+        <a role="button" data-toggle="collapse" href="#AccordionAllende" aria-expanded="false" aria-controls="collapseExample">
           <h2 class="section-prices__title">Showcase  <b>Allende</b></h2>
         </a>
         <a role="button" data-toggle="collapse" href="#AccordionAllende" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
@@ -212,53 +212,81 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
-    <!-- <script src="data.json"></script>  -->
+  <!-- <script src="https://todoshowcase.com/cron/data.js"></script> -->
+  <script src="data_stg.js"></script>
+
+
     <script>
-      const MyData = './data_2.json';
-      //const MyData = 'https://nahuelcuitino.github.io/clase-json/data.json';
+        var SalaBelgrano = document.getElementById('belgrano');
+        var SalaNorcenter = document.getElementById('norcenter');
+        var SalaHaedo = document.getElementById('haedo');
+        var SalaQuilmes = document.getElementById('quilmes');
+        var SalaCordoba = document.getElementById('cordoba');
+        var SalaAllende = document.getElementById('allende');
+        var SalaRosario = document.getElementById('rosario');
+        var SalaImax = document.getElementById('imax-salas');
 
-     /* var SalaBelgrano = document.getElementById('belgrano');
-      var SalaNorcenter = document.getElementById('norcenter');
-      var SalaHaedo = document.getElementById('haedo');
-      var SalaQuilmes = document.getElementById('quilmes');
-      var SalaCordoba = document.getElementById('cordoba');
-      var SalaAllende = document.getElementById('allende');
-      var SalaRosario = document.getElementById('rosario');
-      var SalaImax = document.getElementById('imax-salas');*/
-
-     async function ReadData(value) {
+        var tr = "<div class='clase'>";       
+        let ul = "<ul class='section-prices__list'>";
+        let li = "<li class='section-prices__item-list'>"
+        let heading = "<h3 class='section-prices__sala'>";
         
-        const response = await fetch(MyData);
-        const JsData =  await response.json();
-        //console.log("xxx " + JsData[0].locacion[0].type[0].general + " " + JsData[0].locacion[0].title + "--" + JsData[0].cine);
+        // Precios Belgrano
+        Object.keys(belgrano).map(function(key) {          
+          let titulo = belgrano[key].title;
+          let sala = belgrano[key].type;
+          SalaBelgrano.innerHTML += tr + heading + titulo + "</h3>" + ul + li + sala[0].general + "</li>" + li + sala[0].online + "</li>" + li + sala[0].ninos + "</li>" + li + sala[0].promo + "</li>"  + li + sala[0].matinee + "</li></ul>";
+        });
         
-        for(i in JsData){
-          var obj = JsData[i];
-          
-          const location= obj.belgrano[0];
+        // Precios norcenter
+        Object.keys(norcenter).map(function(key) {          
+          let titulo = norcenter[key].title;
+          let sala = norcenter[key].type;
+          SalaNorcenter.innerHTML += tr + heading + titulo + "</h3>" + ul + li + sala[0].general + "</li>" + li + sala[0].online + "</li>" + li + sala[0].ninos + "</li>" + li + sala[0].promo + "</li>" + li + sala[0].matinee + "</li></ul>";
+        });
 
-          if (value == 'belgrano'){
-            location= obj.belgrano[0]; 
-          }else if(value == 'belgrano')
-          {
-            location= obj.norcenter[0];
-          }
+        // Precios Haedo
+        Object.keys(haedo).map(function(key) {          
+          let titulo = haedo[key].title;
+          let sala = haedo[key].type;
+          SalaHaedo.innerHTML += tr + heading + titulo + "</h3>" + ul + li + sala[0].general + "</li>" + li + sala[0].online + "</li>" + li + sala[0].ninos + "</li>" + li + sala[0].promo + "</li>"  + li + sala[0].matinee + "</li></ul>";
+        });
 
+        // Precios Quilmes
+        Object.keys(quilmes).map(function(key) {          
+          let titulo = quilmes[key].title;
+          let sala = quilmes[key].type;
+          SalaQuilmes.innerHTML += tr + heading + titulo + "</h3>" + ul + li + sala[0].general + "</li>" + li + sala[0].online + "</li>" + li + sala[0].ninos + "</li>" + li + sala[0].promo + "</li>"  + li + sala[0].matinee + "</li></ul>";
+        });
 
-           
+        // Precios Cordoba
+        Object.keys(cordoba).map(function(key) {
+          let titulo = cordoba[key].title;
+          let sala = cordoba[key].type;
+          SalaCordoba.innerHTML += tr + heading + titulo + "</h3>" + ul + li + sala[0].general + "</li>" + li + sala[0].online + "</li>" + li + sala[0].ninos + "</li>" + li + sala[0].promo + "</li>"  + li + sala[0].matinee + "</li></ul>";
+        });
 
-          console.log(":::" + location );
-                    
-          
-          console.log("xxx" + location.type[0].general);
-         
+        // Precios Allende
+        Object.keys(allende).map(function(key) {          
+          let titulo = allende[key].title;
+          let sala = allende[key].type;
+          SalaAllende.innerHTML += tr + heading + titulo + "</h3>" + ul + li + sala[0].general + "</li>" + li + sala[0].online + "</li>" + li + sala[0].ninos + "</li>" + li + sala[0].promo + "</li>"  + li + sala[0].matinee + "</li></ul>";
+        });
 
-        }
-      }
+        // Precios Rosario
+        Object.keys(rosario).map(function(key) {
+          let titulo = rosario[key].title;
+          let sala = rosario[key].type;          
+          SalaRosario.innerHTML += tr + heading + titulo + "</h3>" + ul + li + sala[0].general + "</li>" + li + sala[0].online + "</li>" + li + sala[0].ninos + "</li>" + li + sala[0].promo + "</li>"  + li + sala[0].matinee + "</li></ul>";
+        });
 
-     // var pepe = jsonObject["belgrano"]
-      ReadData('belgrano');
-     
-  </script>
+        // Precios Imax
+        Object.keys(ImaxPrices).map(function(key) {
+            let titulo = ImaxPrices[key].title;
+            let sala = ImaxPrices[key].type;          
+            SalaImax.innerHTML += tr + heading + titulo + "</h3>" + ul + li + sala[0].general + "</li>" + li + sala[0].online + "</li>" + li + sala[0].ninos + "</li>" + li + sala[0].promo + "</li></ul>";
+        });
+       
+    </script>
 </body>
 </html>

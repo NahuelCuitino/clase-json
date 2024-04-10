@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+
+
+ <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+      <div class="row prices-hero">
+      
+      <picture>
+        <source 
+          media="(min-width: 769px)"
+          srcset="hero_prices.png" class="image-prices">
+        <source 
+          media="(max-width: 768px)"
+          srcset="hero_prices_mobile.png" class="image-prices">
+        <img 
+          src="hero_prices_mobile.png" 
+          alt="a cute kitten" class="image-prices">
+      </picture>
+
+
+      </div>
+ <!-- CONTENT Precios -->
+ <div class="container cont-test">
+  <div class="row prices-hero">
+  <picture>
+    <source 
+    media="(min-width: 769px)"
+    srcset="<?php echo Yii::app()->theme->baseUrl; ?>/images/hero_prices.jpg" class="image-prices">
+    <source 
+    media="(max-width: 768px)"
+    srcset="<?php echo Yii::app()->theme->baseUrl; ?>/images/hero_prices_mobile.jpg" class="image-prices">
+    <img 
+    src="<?php echo Yii::app()->theme->baseUrl; ?>/images/hero_prices_mobile.jpg" 
+    alt="" class="image-prices">
+  </picture>
+  </div>
+</div>
+<!--Tests Json -->
+
+<!-- accordion -->    
+<div class="row faq-container">
+  <div class="cont-faq-title">
+    <h2 class="cont-faq-title__title-faq">
+      Preguntas frecuentes
+    </h2>
+    <a href="" target="_blank">
+      Conocé los términos y condiciones
+    </a>
+  </div>
+    
+  <!--faq1 -->
+  <div class="section-faq">
+    <div class="title-toggle">
+      <a role="button" data-toggle="collapse" href="#faq1" aria-expanded="false" aria-controls="collapseExample">  
+        <h3 class="section-faq__title-faq">
+          ¿Cómo funciona?
+        </h3>
+      </a>
+      <a role="button" data-toggle="collapse" href="#faq1" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+        <span class="prices-caret"></span>
+      </a>
+    </div>
+    <div id="faq1" class="collapse">
+      <div class="section-faq__cont-hidden">
+        <p class="section-faq__faq-text">
+          Seleccionando en el menú de inicio "Beneficios", vas a encontrar las promociones disponibles del Programa de Beneficios. Elegí la promo que desees obtener, clickeá en "Ver Código", y automáticamente vas a recibir en pantalla el código promocional que tenés que presentar al momento de hacer la compra.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+  
+  <!--faq2 -->
+  <div class="section-faq">
+    <div class="title-toggle">
+      <a role="button" data-toggle="collapse" href="#faq2" aria-expanded="false" aria-controls="collapseExample">  
+        <h3 class="section-faq__title-faq">
+          ¿El código promocional que recibí lo puedo volver a ver? 
+        </h3>
+      </a>
+      <a role="button" data-toggle="collapse" href="#faq2" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+        <span class="prices-caret"></span>
+      </a>
+    </div>
+    <div id="faq2" class="collapse">
+      <div class="section-faq__cont-hidden">
+        <p class="section-faq__faq-text">
+          Seleccionando en el menú de inicio "Historial", vas a encontrar los cupones solicitados.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+  <!--faq3 -->
+  <div class="section-faq">
+    <div class="title-toggle">
+      <a role="button" data-toggle="collapse" href="#faq3" aria-expanded="false" aria-controls="collapseExample">  
+        <h3 class="section-faq__title-faq">
+          ¿Tiene algún costo recibir los cupones? 
+        </h3>
+      </a>
+      <a role="button" data-toggle="collapse" href="#faq3" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+        <span class="prices-caret"></span>
+      </a>
+    </div>
+    <div id="faq3" class="collapse">
+      <div class="section-faq__cont-hidden">
+        <p class="section-faq__faq-text">
+          ¡No! Obtener el beneficio es gratis.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+  <!--faq4 -->
+  <div class="section-faq">
+    <div class="title-toggle">
+      <a role="button" data-toggle="collapse" href="#faq4" aria-expanded="false" aria-controls="collapseExample">  
+        <h3 class="section-faq__title-faq">
+          ¿Cuántos cupones puedo solicitar? 
+        </h3>
+      </a>
+      <a role="button" data-toggle="collapse" href="#faq4" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+        <span class="prices-caret"></span>
+      </a>
+    </div>
+    <div id="faq4" class="collapse">
+      <div class="section-faq__cont-hidden">
+        <p class="section-faq__faq-text">
+          Podés solicitar un código a la vez. Es decir, podrás solicitar un nuevo código una vez que hayas utilizado el anterior. Podés validar un código por día.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+  <!--faq5 -->
+  <div class="section-faq">
+    <div class="title-toggle">
+      <a role="button" data-toggle="collapse" href="#faq5" aria-expanded="false" aria-controls="collapseExample">  
+        <h3 class="section-faq__title-faq">
+          Todavía tengo dudas, ¿cómo me contacto con soporte? 
+        </h3>
+      </a>
+      <a role="button" data-toggle="collapse" href="#faq5" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+        <span class="prices-caret"></span>
+      </a>
+    </div>
+    <div id="faq5" class="collapse">
+      <div class="section-faq__cont-hidden">
+        <p class="section-faq__faq-text">
+          Si todavía tenés dudas, escribinos a showcase@cupona.com.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+  <!--faq6 -->
+  <div class="section-faq">
+    <div class="title-toggle">
+      <a role="button" data-toggle="collapse" href="#faq6" aria-expanded="false" aria-controls="collapseExample">  
+        <h3 class="section-faq__title-faq">
+          ¿Cómo puedo conseguir 1 entrada sin cargo? 
+        </h3>
+      </a>
+      <a role="button" data-toggle="collapse" href="#faq6" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+        <span class="prices-caret"></span>
+      </a>
+    </div>
+    <div id="faq6" class="collapse">
+      <div class="section-faq__cont-hidden">
+        <p class="section-faq__faq-text">
+          Cada 3 códigos 2x1 que valides en Showcase y/o en IMAX, obtendrás de manera automática un código valido por 1 entrada para ver una película 2D en Showcase. Beneficio valido hasta agotar 500 entradas gratis o hasta el 31 de diciembre de 2022, lo que ocurra primero.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+  <!--faq7 -->
+  <div class="section-faq">
+    <div class="title-toggle">
+      <a role="button" data-toggle="collapse" href="#faq7" aria-expanded="false" aria-controls="collapseExample">  
+        <h3 class="section-faq__title-faq">
+          Una vez que validé 3 códigos 2x1, ¿cómo obtengo el beneficio de 1 entrada sin cargo? 
+        </h3>
+      </a>
+      <a role="button" data-toggle="collapse" href="#faq7" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+        <span class="prices-caret"></span>
+      </a>
+    </div>
+    <div id="faq7" class="collapse">
+      <div class="section-faq__cont-hidden">
+        <p class="section-faq__faq-text">
+          El código válido por 1entrada sin cargo te aparecerá automáticamente entre los beneficios disponibles de tu app. Este beneficio aparecerá dentro de los 2 próximos días hábiles después de tu última validación 2x1.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+  <!--faq8 -->
+  <div class="section-faq">
+    <div class="title-toggle">
+      <a role="button" data-toggle="collapse" href="#faq8" aria-expanded="false" aria-controls="collapseExample">  
+        <h3 class="section-faq__title-faq">
+          ¿Cuánto tiempo tengo para usar la entrada sin cargo? 
+        </h3>
+      </a>
+      <a role="button" data-toggle="collapse" href="#faq8" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+        <span class="prices-caret"></span>
+      </a>
+    </div>
+    <div id="faq8" class="collapse">
+      <div class="section-faq__cont-hidden">
+        <p class="section-faq__faq-text">
+          El beneficio de la entrada sin cargo tendrá una vigencia de 30 días desde el momento en que validaste tu 3° código 2x1. La app te mandará un mensaje automático para avisarte que cuando ya la tengas disponible y luego un recordatorio cuando falten 15 días de vigencia para que puedas usarla.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+  
+  <!--faq9 -->
+  <div class="section-faq">
+    <div class="title-toggle">
+      <a role="button" data-toggle="collapse" href="#faq9" aria-expanded="false" aria-controls="collapseExample">  
+        <h3 class="section-faq__title-faq">
+          ¿Qué hago si se pasa el tiempo de vigencia de la entrada sin cargo? 
+        </h3>
+      </a>
+      <a role="button" data-toggle="collapse" href="#faq9" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+        <span class="prices-caret"></span>
+      </a>
+    </div>
+    <div id="faq9" class="collapse">
+      <div class="section-faq__cont-hidden">
+        <p class="section-faq__faq-text">
+          Si no usas el beneficio de la entrada sin cargo durante el periodo de vigencia establecido, perderás el beneficio sin posibilidad de hacer ningún tipo de reclamo.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+  <!--faq10 -->
+  <div class="section-faq">
+    <div class="title-toggle">
+      <a role="button" data-toggle="collapse" href="#faq10" aria-expanded="false" aria-controls="collapseExample">  
+        <h3 class="section-faq__title-faq">
+          ¿Desde cuándo se registrarán las validaciones 2x1 de mi perfil para poder acceder al beneficio de 1 ENTRADA SIN CARGO? 
+        </h3>
+      </a>
+      <a role="button" data-toggle="collapse" href="#faq10" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+        <span class="prices-caret"></span>
+      </a>
+    </div>
+    <div id="faq10" class="collapse">
+      <div class="section-faq__cont-hidden">
+        <p class="section-faq__faq-text">
+          Se tomarán en cuenta las validaciones 2x1 realizadas desde el 1° de septiembre de 2022 en adelante.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+  <!--faq11 -->
+  <div class="section-faq">
+    <div class="title-toggle">
+      <a role="button" data-toggle="collapse" href="#faq11" aria-expanded="false" aria-controls="collapseExample">  
+        <h3 class="section-faq__title-faq">
+          ¿Qué vigencia tendrá el beneficio de 1 ENTRADA SIN CARGO otorgada por cada 3 códigos 2x1 validados? 
+        </h3>
+      </a>
+      <a role="button" data-toggle="collapse" href="#faq11" aria-expanded="false" aria-controls="collapseExample" class="btn-expand">
+        <span class="prices-caret"></span>
+      </a>
+    </div>
+    <div id="faq11" class="collapse">
+      <div class="section-faq__cont-hidden">
+        <p class="section-faq__faq-text">
+          Será vigente hasta el 28 de febrero de 2023. La empresa se reserva el derecho de cancelar dicho beneficio en cualquier momento sin previo aviso. Beneficio valido hasta agotar 500 entradas gratis o hasta el 31 de diciembre de 2023, lo que ocurra primero.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+</div> 
+<!-- fin accordion -->
+<!-- /CONTENT Precios -->
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <!-- <script src="data.json"></script>  -->
+    <script>
+
+
+     
+  </script>
+</body>
+</html>
